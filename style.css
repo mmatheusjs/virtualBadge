@@ -20,9 +20,10 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100%;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -65,6 +66,11 @@ h1 {
   display: flex;
   gap: 0.75rem;
   justify-content: center;
+  transition: 0.3s;
+}
+
+.container a:hover {
+  transform: scale(1.03);
 }
 
 .container p {
@@ -78,4 +84,13 @@ ul#linkList {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+ul#linkList li img {
+  border-radius: 0.2rem;
+  transition: 0.3s;
+}
+
+ul#linkList li img:hover {
+  transform: scale(1.06);
 }
